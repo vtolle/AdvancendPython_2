@@ -5,6 +5,7 @@ def get_readme():
     with open("README.md") as f:
         return f.read()
 
+# Hallo Welt
 
 def get_license():
     with open("LICENSE") as f:
