@@ -12,8 +12,8 @@ ifeq ($(OS), Windows_NT)
 	FixPath=$(subst /,\,$1)
 	BUILD_DOC=cd $(SRC_DOC) && build_docs.bat
 else
-	PYTHON=python
-	PIP=pip
+	PYTHON=python3
+	PIP=pip3
 	RM=rm -f
 	FixPath=$1
 	BUILD_DOC=cd $(SRC_DOC) && ./build_docs.sh
