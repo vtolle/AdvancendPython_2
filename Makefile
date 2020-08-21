@@ -39,9 +39,9 @@ test:
 	@$(PYTHON) -m pytest $(SRC_TEST)
 
 test-coverage:
-	@$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST) --cov-report html
-	#@$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST)
-	#@$(PYTHON) -m codecov
+	#@$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST) --cov-report html
+	@$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST)
+	@$(PYTHON) -m codecov
 
 benchmark:
 	@$(PYTHON) -m py.test --benchmark-columns=mean,stddev,median,rounds,iterations --benchmark-sort=mean $(SRC_BENCH)
