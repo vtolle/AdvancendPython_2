@@ -21,7 +21,7 @@ Operating System :: Unix
 Operating System :: MacOS
 """
 
-DISTNAME = "fastvector"
+DISTNAME = "my fastvector"
 AUTHOR = "Jan Schaffranek"
 AUTHOR_EMAIL = "jan.schaffranek@email.com"
 DESCRIPTION = "This is a simple vector package."
